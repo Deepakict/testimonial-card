@@ -1,0 +1,87 @@
+/* Variables for colors */
+:root {
+  --main-bg-color: #f0f0f0;
+  --gradient-start: #F9FAFB;
+  --gradient-end: #D2D6DB;
+  --text-color: #525252;
+  --heading-color: #000000;
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  background-image: linear-gradient(var(--gradient-start), var(--gradient-end));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  width: 340px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Card header for avatar and details */
+.card__header {
+  display: flex;
+  gap: 16px;
+  align-items: center; /* Align avatar and text vertically */
+}
+
+/* Avatar image */
+.card__avatar {
+  flex-shrink: 0;
+}
+
+.card__img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%; /* Circular avatar */
+}
+
+/* Card details (name and username) */
+.card__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.card__username {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Card content */
+.card__content {
+  margin-top: 16px;
+}
+
+.card__text {
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+
